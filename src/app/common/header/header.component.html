@@ -1,0 +1,41 @@
+<header class="b-header">
+
+  <!--[if lt IE 7]>
+  <p class="browsehappy">Nos está visitando con un <strong>navegador antiguo</strong>. Para disfrutar este
+    sitio que hemos preparado para ti, por favor descarga un navegador más nuevo y mejor <a
+      href="http://browsehappy.com/">aquí</a>, gracias.</p>
+  <![endif]-->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" [routerLink]="['/inicio']">Inicio</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        
+
+        <li><a [routerLink]="['/ideas']">Mis ideas</a></li>
+        <li><a [routerLink]="['/retos']">Retos</a> </li>
+        <li><a [routerLink]="['/perfil']">Mi perfil</a> </li>         
+
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Escribe aquí">
+        </div>
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
